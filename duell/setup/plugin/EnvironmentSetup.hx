@@ -209,14 +209,13 @@ class EnvironmentSetup
 
             downloadPackages(~/(Android SDK Platform)/);
             downloadPackages(~/(Android SDK Tools)/);
-            downloadPackages(~/(Android SDK Build-tools, revision 23.0.3)/);
-            downloadPackages(~/(SDK Platform Android 6.0, API 23)/);
+            downloadPackages(~/(Android SDK Build-tools, revision 24.0.2)/);
+            downloadPackages(~/(SDK Platform Android 7.0, API 24)/);
             downloadPackages(~/(SDK Platform Android 4.1.2, API 16)/);
-            downloadPackages(~/(ARM EABI v7a System Image, Android API 23)/, ~/(Android TV)|(Android Wear)/);
-            downloadPackages(~/(Intel x86 Atom System Image, Android API 23)/, ~/(Android TV)|(Android Wear)/);
+            downloadPackages(~/(ARM EABI v7a System Image, Android API 24)/, ~/(Android TV)|(Android Wear)/);
+            downloadPackages(~/(Intel x86 Atom System Image, Android API 24)/, ~/(Android TV)|(Android Wear)/);
             downloadPackages(~/(Intel x86 Emulator Accelerator)/);
             downloadPackages(~/(Android Support Repository)/);
-            downloadPackages(~/(Android Support Library)/);
             downloadPackages(~/(Google Play services, revision)/); // exclude Play services for Froyo
             downloadPackages(~/(Google Repository)/);
 
