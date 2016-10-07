@@ -174,11 +174,11 @@ class EnvironmentSetup
         var necessaryLibrariesString = "\n" +
             "     - Android SDK Platform" + "\n" +
             "     - Android SDK Tools" + "\n" +
-            "     - Android SDK Build-tools, revision 23.0.3" + "\n" +
-            "     - SDK Platform Android 6.0, API 23" + "\n" +
+            "     - Android SDK Build-tools, revision 24.0.2" + "\n" +
+            "     - SDK Platform Android 7.0, API 24" + "\n" +
             "     - SDK Platform Android 4.1.2, API 16" + "\n" +
-            "     - ARM EABI v7a System Image, Android API 23" + "\n" +
-            "     - Intel x86 Atom System Image, Android API 23" + "\n" +
+            "     - ARM EABI v7a System Image, Android API 24" + "\n" +
+            "     - Intel x86 Atom System Image, Android API 24" + "\n" +
             "     - Intel x86 Emulator Accelerator" + "\n" +
             "     - Android Support Repository" + "\n" +
             "     - Android Support Library" + "\n" +
@@ -257,13 +257,13 @@ class EnvironmentSetup
         LogHelper.info("\x1b[1mCreating x86 emulator...\x1b[0m");
         CommandHelper.runCommand(   Path.join([androidSDKPath, "tools"]),
         "android",
-        ["create", "avd", "-f", "-a", "-c", "512M", "-s", "WVGA800", "-n", "duellx86", "-t", "android-23", "--abi", "x86"],
+        ["create", "avd", "-f", "-a", "-c", "512M", "-s", "WVGA800", "-n", "duellx86", "-t", "android-24", "--abi", "x86"],
         {errorMessage: "trying to create x86 emulator", systemCommand:false});
 
         LogHelper.info("\x1b[1mCreating armv7a emulator...\x1b[0m");
         CommandHelper.runCommand(   Path.join([androidSDKPath, "tools"]),
         "android",
-        ["create", "avd", "-f", "-a", "-c", "512M", "-s", "WVGA800", "-n", "duellarmv7", "-t", "android-23", "--abi", "armeabi-v7a"],
+        ["create", "avd", "-f", "-a", "-c", "512M", "-s", "WVGA800", "-n", "duellarmv7", "-t", "android-24", "--abi", "armeabi-v7a"],
         {errorMessage: "trying to create x emulator", systemCommand:false});
     }
 
