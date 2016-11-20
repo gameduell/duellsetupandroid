@@ -347,6 +347,7 @@ class EnvironmentSetup
             /// the actual download
             DownloadHelper.downloadFile(downloadPath);
 
+            PathHelper.removeDirectory(androidNDKPath);
             /// create the directory
             PathHelper.mkdir(androidNDKPath);
 
